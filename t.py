@@ -10,11 +10,11 @@ import time
 import openpyxl
 import os
 
-test_url = "https://www.linkedin.com/search/results/people/?geoUrn=%5B%22102713980%22%5D&keywords=startup&origin=FACETED_SEARCH&searchId=c3fd8507-ac47-43b1-8ebe-d3d02f715a3f&sid=oC9&talksAbout=%5B%22fintech%22%5D&titleFreeText=Founder"
+test_url = "put your search link with derised filters applied"
 
 # Configure Chrome options
 chrome_options = Options()
-#chrome_options.add_argument("--headless")  # Run Chrome in headless mode (without opening a browser window)
+chrome_options.add_argument("--headless")  # Run Chrome in headless mode (without opening a browser window)
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 
