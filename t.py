@@ -21,9 +21,9 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 # Initialize Chrome driver
 driver = webdriver.Chrome(options=chrome_options)
 driver.get("https://linkedin.com")
-#driver.set_window_size(1920, 1080)  # Set a larger window size to prevent crashes due to minimized windows
+driver.set_window_size(1920, 1080)  # Set a larger window size to prevent crashes due to minimized windows
 
-wait = WebDriverWait(driver, 10)
+wait = WebDriverWait(driver, 5)
 
 username_field = wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id='session_key']")))
 password_field = wait.until(EC.presence_of_element_located((By.XPATH, "//*[@id='session_password']")))
